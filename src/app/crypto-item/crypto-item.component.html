@@ -1,6 +1,10 @@
 <p class="col-1">{{rank}}</p>
-<img class="col-2" src={{image}} alt="This is the logo of the cryptocurrency">
+
+<img src={{image}} class="col-2">
+
 <p class="col-4">{{name}}</p>
+
 <p class="col-3">{{price}}</p>
-<img  src={{change}} class="col-2" [ngStyle]="{'background-color': isUp ? 'rgb(52, 218, 127)' : 'rgb(223, 69, 69)'}
-">
+
+<img src={{change}} class="col-2" 
+    [ngStyle]="{'background-color': isUp ? 'rgb(52, 218, 127)' : 'rgb(223, 69, 69)'}">

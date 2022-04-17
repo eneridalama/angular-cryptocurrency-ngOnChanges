@@ -1,9 +1,21 @@
 #crypto__container {
   margin: 2rem auto;
   width: 500px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    mat-card-title {
+      font-size: 2rem;
+      font-family: "Courier New", Courier, monospace;
+    }
+    button {
+      margin: 5px;
+    }
+  }
   ul {
     li {
-        padding: 8px 35px;
+      padding: 8px 35px;
       p {
         text-transform: uppercase;
         font-size: 1.1rem;
@@ -18,21 +30,5 @@
     #banner {
       background-color: rgba(0, 0, 0, 0.064);
     }
-  }
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  mat-card-title {
-    font-size: 2rem;
-    font-family: "Courier New", Courier, monospace;
-    // margin-left: 20px;
-  }
-
-  button {
-    margin: 5px;
   }
 }

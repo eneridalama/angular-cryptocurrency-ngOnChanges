@@ -1,4 +1,4 @@
-import { Component, OnChanges, SimpleChanges } from '@angular/core';
+import { Component} from '@angular/core';
 import { crypto } from './crypto-item/crypto';
 import { CRYPTOFILES } from './CRYPTOFILES';
 
@@ -14,8 +14,8 @@ export class AppComponent {
     for (let crypto of this.cryptocurrency) {
       crypto.price = Math.ceil(+Math.random().toFixed(3) * 100);
     }
-    this.cryptocurrency = [...this.cryptocurrency]; 
+    this.cryptocurrency = [...this.cryptocurrency];
   }
-  
-  title = 'CryptoApp';
+
+  title = 'Crypto App';
 }
