@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { crypto } from './crypto-item/crypto';
+import { crypto } from './shared/crypto';
 import { CRYPTOFILES } from './CRYPTOFILES';
 
 @Component({

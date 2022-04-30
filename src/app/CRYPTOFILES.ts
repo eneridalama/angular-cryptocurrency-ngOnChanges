@@ -1,8 +1,8 @@
-import { crypto } from "./crypto-item/crypto";
+import { crypto } from "./shared/crypto";
 
 export const CRYPTOFILES: crypto[] = [
   { rank: 1, image: 'assets/images/bitcoin.png', name: 'Bitcoin', price: 39.81, change: 'assets/images/arrowUp.svg'},
-  { rank: 2, image: 'assets/images/ethereum.png', name: 'Ethereum', price: 24.39, change: 'assets/images/arrowUp.svg'  },
+  { rank: 2, image: 'assets/images/ethereum.png', name: 'Ethereum', price: 24.39, change: 'assets/images/arrowUp.svg'},
   { rank: 3, image: 'assets/images/tether.png', name: 'Tether', price: 1, change: 'assets/images/arrowUp.svg' },
   { rank: 4, image: 'assets/images/BNB.png', name: 'BNB', price: 4.87,  change: 'assets/images/arrowUp.svg' },
   { rank: 5, image: 'assets/images/USD-coin.png', name: 'USD Coin', price: 0.96,  change: 'assets/images/arrowUp.svg' },

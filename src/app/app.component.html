@@ -1,7 +1,6 @@
-<div class="container" id="crypto__container">
+<div class="container " id="crypto__container">
   <div class="row">
     <mat-card>
-
       <div class="header">
         <mat-card-title>CRYPTOCURRENCIES</mat-card-title>
         <button class="btn btn-sm  ">
@@ -13,24 +12,19 @@
 
         <li class="list-group-item" id="banner">
           <div class="row d-flex justify-content-between align-items-center">
-            <p class="col-1">Rank</p>
+            <p class="col-1">NO</p>
             <p class="col-2">Name</p>
             <p class="col-1">Price</p>
             <p class="col-2">Change</p>
           </div>
         </li>
-
-        <li class="list-group-item justify-content-between" *ngFor="let crypto of cryptocurrency">
-          <app-crypto-item class="row d-flex justify-content-between align-items-center"
-          [rank]="crypto.rank" 
-          [image]="crypto.image" 
-          [name]="crypto.name" 
-          [price]="crypto.price"
-          [change]="crypto.change" 
-          >
-          </app-crypto-item>
-        </li>
-
+        <ng-container *ngFor="let crypto of cryptocurrency | sortBy">
+          <li class="list-group-item justify-content-between">
+            <app-crypto-item class="row d-flex justify-content-between align-items-center" [rank]="crypto.rank"
+              [image]="crypto.image" [name]="crypto.name" [price]="crypto.price" [change]="crypto.change">
+            </app-crypto-item>
+          </li>
+        </ng-container>
       </ul>
     </mat-card>
   </div>

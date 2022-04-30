@@ -33,7 +33,7 @@ export class CryptoItemComponent implements OnInit, OnChanges {
       changes[i].currentValue > changes[i].previousValue
         ? (this.change = 'assets/images/arrowUp.svg')
         : (this.change = 'assets/images/arrowDown.svg');
-      this.changeColor(this.change);
+      this.changeColor(this.change);     
     }
   }
 
